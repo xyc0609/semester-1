@@ -3,11 +3,12 @@
 # You are going to write a very simple program:
 
 # Ask a user to enter two numbers (one per input)
-
+x = int(input())
+y = int(input())
 # multiply those numbers together
-
+z = x * y
 # print out the result
-
+print(z)
 # There is an extra point available for validating that they entered numbers!
 # Add to your code so that if they entered something other than an integer it prints
 # 'That is not a number' and exits.
