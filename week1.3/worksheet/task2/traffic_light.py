@@ -17,11 +17,15 @@ print(f"Time {systime:03} State {state}")
 cycle_time = sum(states.values())
 # At the end of each step you should output the time and state using the statement on line 14
 for systime in range (1, maxtime + 1):
-    elapsed = (systime - 1) % cycle_time
-    for next_state, duration in states.items():
-        if elapsed < duration:
-            state = next_state
-            break
-        elapsed -= duration
+    elapsed = (systime -1) % cycle_time
+
+    if elapsed <= 2 or elapsed == 14:
+        state = "red"
+    elif elapsed < 6:
+        state = "red_amber"
+    elif elapsed < 11:
+        state = "green"
+    else:
+        state = "amber"
     print(f"Time {systime:03} State {state}")
 
