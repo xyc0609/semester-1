@@ -14,6 +14,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import random
 
+data = pd.read_csv('/workspaces/semester-1/week1.8/session1/task4-combined/ramen-ratings.csv')
 
 def show_histogram_of_ramen_scores(data):
     '''
