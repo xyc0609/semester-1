@@ -4,7 +4,13 @@ from pprint import pprint
 
 # Create music database, as a dictionary of strings mapped to lists
 # (keys are artist names, values are lists of album names)
-
+music = {"Charlie" : [1, 2, 3],
+         "Kelvin" : [4, 5, 6],
+         "Justin" : [7, 8, 9]
+    
+}
 # Pretty-print the data structure
+pprint(music)
 
 # Display details of one album recorded by a specific artist
+pprint(music.values())
